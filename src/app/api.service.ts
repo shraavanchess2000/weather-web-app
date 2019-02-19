@@ -5,10 +5,10 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
   constructor(private http: HttpClient) { }
   key: string = '6b2ee9abff47693382fac0cf7f2b5b9a';
-  milwaukeeUrl: string = 'http://api.openweathermap.org/data/2.5/weather?q=Milwaukee,us&APPID=' + this.key;
-  minneapolisUrl: string = 'http://api.openweathermap.org/data/2.5/weather?q=Minneapolis,us&APPID=' + this.key;
-  chicagoUrl: string = 'http://api.openweathermap.org/data/2.5/weather?q=Chicago,us&APPID=' + this.key;
-  dallasUrl: string = 'http://api.openweathermap.org/data/2.5/weather?q=Dallas,us&APPID=' + this.key;
+  milwaukeeUrl: string = 'https://api.openweathermap.org/data/2.5/weather?q=Milwaukee,us&APPID=' + this.key;
+  minneapolisUrl: string = 'https://api.openweathermap.org/data/2.5/weather?q=Minneapolis,us&APPID=' + this.key;
+  chicagoUrl: string = 'https://api.openweathermap.org/data/2.5/weather?q=Chicago,us&APPID=' + this.key;
+  dallasUrl: string = 'https://api.openweathermap.org/data/2.5/weather?q=Dallas,us&APPID=' + this.key;
 
   getCity(city: string) {
     if (city == 'Chicago' || city == 'chicago') {
