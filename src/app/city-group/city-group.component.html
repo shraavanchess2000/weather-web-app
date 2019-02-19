@@ -1,0 +1,63 @@
+<div style="padding: 2%;" class="slds-button-group slds-size_1-of-2 slds-align_absolute-center" role="group">
+  <button class="slds-button slds-button_neutral" (click)="showWeather()">{{ buttonDescription }}</button>
+</div>
+<div class="slds-align_absolute-center">
+  <table class="slds-size_1-of-2 slds-rich-text-editor__textarea table">
+    <tr>
+      <th></th>
+      <th>{{ milwaukeeDescription }}</th>
+      <th>{{ minneapolisDescription }}</th>
+      <th>{{ chicagoDescription }}</th>
+      <th>{{ dallasDescription }}</th>
+    </tr>
+    <tr>
+      <td>{{ airPressureDescription }}</td>
+      <td>{{ milwaukeeWeather.airPressure }}</td>
+      <td>{{ minneapolisWeather.airPressure }}</td>
+      <td>{{ chicagoWeather.airPressure }}</td>
+      <td>{{ dallasWeather.airPressure }}</td>
+    </tr>
+    <tr>
+      <td>{{ humidityDescription }}</td>
+      <td>{{ milwaukeeWeather.humidity }}</td>
+      <td>{{ minneapolisWeather.humidity }}</td>
+      <td>{{ chicagoWeather.humidity }}</td>
+      <td>{{ dallasWeather.humidity }}</td>
+    </tr>
+    <tr>
+      <td>{{ latitudeDescription }}</td>
+      <td>{{ milwaukeeWeather.latitude }}</td>
+      <td>{{ minneapolisWeather.latitude }}</td>
+      <td>{{ chicagoWeather.latitude }}</td>
+      <td>{{ dallasWeather.latitude }}</td>
+    </tr>
+    <tr>
+      <td>{{ longitudeDescription }}</td>
+      <td>{{ milwaukeeWeather.longitude }}</td>
+      <td>{{ minneapolisWeather.longitude }}</td>
+      <td>{{ chicagoWeather.longitude }}</td>
+      <td>{{ dallasWeather.longitude }}</td>
+    </tr>
+    <tr>
+      <td>{{ temperatureDescription }}</td>
+      <td>{{ milwaukeeWeather.temperature }}</td>
+      <td>{{ minneapolisWeather.temperature }}</td>
+      <td>{{ chicagoWeather.temperature }}</td>
+      <td>{{ dallasWeather.temperature }}</td>
+    </tr>
+    <tr>
+      <td>{{ windDirectionDescription }}</td>
+      <td>{{ milwaukeeWeather.windDirection }}</td>
+      <td>{{ minneapolisWeather.windDirection }}</td>
+      <td>{{ chicagoWeather.windDirection }}</td>
+      <td>{{ dallasWeather.windDirection }}</td>
+    </tr>
+    <tr>
+      <td>{{ windSpeedDescription }}</td>
+      <td>{{ milwaukeeWeather.windSpeed }}</td>
+      <td>{{ minneapolisWeather.windSpeed }}</td>
+      <td>{{ chicagoWeather.windSpeed }}</td>
+      <td>{{ dallasWeather.windSpeed }}</td>
+    </tr>
+  </table>
+</div>
